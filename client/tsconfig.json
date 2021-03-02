@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "target": "es2017",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "paths": {
+      "@components/*": [
+        "components/*",
+      ],
+      "@components": [
+        "components",
+      ],
+      "@services/*": [
+        "services/*",
+      ],
+      "@config/*": [
+        "config/*",
+      ],
+      "@config": [
+        "config",
+      ],
+      "@routes/*": [
+        "routes/*",
+      ],
+      "@routes": [
+        "routes",
+      ],
+      "@constant/*": [
+        "constant/*",
+      ],
+      "@constant": [
+        "constant",
+      ],
+      "@utils/*": [
+        "utils/*",
+      ],
+      "@utils": [
+        "utils",
+      ],
+      "@hooks/*": [
+        "hooks/*",
+      ],
+      "@hooks": [
+        "hooks",
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

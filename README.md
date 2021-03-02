@@ -18,10 +18,12 @@
 前后端使用 GraphQL 通信
 
 ## 前端
-React + react-apollo + Antd + TS + PWA
+Webpack + React + react-apollo + Antd + TS + PWA + Jest
+
+1. 虚拟列表优化长列表
 
 ## 后端
-express + graphql + TS + next.js
+apollo-server-express + TS + next.js + Jest
 
 ## 部署
 K8s + docker

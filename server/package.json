@@ -1,0 +1,30 @@
+{
+  "name": "js-fe-be-server",
+  "version": "1.0.0",
+  "description": "大前端项目的服务端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronffy/js-fe-be.git"
+  },
+  "keywords": [
+    "express",
+    "next.js",
+    "typescript",
+    "graphql"
+  ],
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "pm2": "^4.5.1"
+  },
+  "author": "ronffy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ronffy/js-fe-be/issues"
+  },
+  "homepage": "https://github.com/ronffy/js-fe-be#readme"
+}
