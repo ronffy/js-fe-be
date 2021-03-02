@@ -1,6 +1,6 @@
-@import "../../theme/index.less";
+@import "../../themes/index.less";
 
-.font {
+.basefont() {
   color: @primary-color;
   font-size: 24px;
 }
@@ -9,7 +9,7 @@
   transform: translate(10, 10);
 
   .title {
-    composes: font;
+    .basefont();
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 }

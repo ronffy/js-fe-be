@@ -2,7 +2,7 @@
  * @description 
  * @author ronffy
  * @Date 2021-01-05 10:51:02
- * @LastEditTime 2021-03-02 15:00:25
+ * @LastEditTime 2021-03-02 15:16:06
  * @LastEditors ronffy
  */
 const chalk = require('chalk');
@@ -12,9 +12,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const package = require('../package.json');
 const Webpackbar = require('webpackbar');
 const paths = require('./paths');
+const createTheme = require('../theme.config');
 
 const isProd = process.env.NODE_ENV === 'production';
-console.log(chalk.yellow(`Development:${!isProd};Version:${package.version}`));
+console.log(chalk.yellow(`Development:${!isProd}.`));
+console.log(chalk.yellow(`Version:${package.version}.`));
 
 function createStyleLoaders({
   less
@@ -36,7 +38,8 @@ function createStyleLoaders({
           // 解决 antd4.x 与 less- loader4.x 如下报错：
           //   .bezierEasingMixin();
           //   Inline JavaScript is not enabled.Is it set in your options?
-          javascriptEnabled: true
+          javascriptEnabled: true,
+          modifyVars: createTheme(),
         },
         ...less,
       }
