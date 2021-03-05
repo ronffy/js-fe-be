@@ -18,6 +18,12 @@
       "@components": [
         "components",
       ],
+      "@containers/*": [
+        "containers/*",
+      ],
+      "@containers": [
+        "containers",
+      ],
       "@services/*": [
         "services/*",
       ],

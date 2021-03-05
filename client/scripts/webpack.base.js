@@ -2,7 +2,7 @@
  * @description 
  * @author ronffy
  * @Date 2021-01-05 10:51:02
- * @LastEditTime 2021-03-02 15:16:06
+ * @LastEditTime 2021-03-04 10:53:30
  * @LastEditors ronffy
  */
 const chalk = require('chalk');
@@ -100,6 +100,9 @@ module.exports = function configFactory(env) {
       extensions: ['.ts', '.tsx', '.js', '.jsx'],
       alias: {
         '@components': paths.resolveApp('src/components'),
+        '@containers': paths.resolveApp('src/containers'),
+        '@utils': paths.resolveApp('src/utils'),
+        '@services': paths.resolveApp('src/services'),
       }
     },
     plugins: [
